@@ -1,0 +1,40 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-posts',
+  standalone: true,
+  templateUrl: './post.component.html',
+  styleUrls: ['./post.component.scss']
+})
+export class PostsComponent {}
+
+.page-header {
+  text-align: center;
+  padding: 1.5rem;
+  background-color:rgb(48, 236, 221);
+  color: white;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 2rem;
+}
+
+.post-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card button {
+  align-self: flex-end;
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+}
